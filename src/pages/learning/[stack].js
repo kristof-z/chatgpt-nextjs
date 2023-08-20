@@ -10,7 +10,6 @@ export default function Stack({ stack, stackKey }) {
 
   useEffect(() => {
     chatRef.current.scrollTo(0, chatRef.current.scrollHeight)
-    console.log('Messages changed!')
   }, [messages])
 
   const onSubmit = async (prompt)  => {
